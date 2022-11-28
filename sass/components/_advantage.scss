@@ -1,0 +1,39 @@
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 118px;
+}
+
+.advantage__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+.advantage__item {
+  flex-basis: calc((100% - 30px * 3) / 4);
+}
+
+.advantage__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.advantage__box {
+  padding: 25px 102px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
