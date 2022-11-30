@@ -4,6 +4,13 @@
   gap: 50px;
   align-items: center;
 
+  @media screen and (max-width: 738px){
+    display: none;
+  }
+  @media screen and (min-width: 738px) and (max-width:1199px)
+  {
+    display: block;
+  }
 }
 
 .contact__link {

@@ -5,27 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
+
     <!-- modern normalizer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- SASS -->
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container flex">
-        <a href="./index.html" class="logo logo--whitebg">
-          <span class="logo__accent">Web</span>Studio</a>
+        <div class="mobile__header">
+          <a href="./index.html" class="logo logo--whitebg">
+            <span class="logo__accent">Web</span>Studio</a>
+          <button 
+            class="mobile-menu__btn"
+            type="button">
+              <svg height="40" width="40">
+                <use class="mobile-menu__icon"></use>
+                <use class="mobile-menu__icon"></use>
+              </svg>
+          </button>
+        </div>
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
