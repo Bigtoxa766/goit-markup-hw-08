@@ -1,0 +1,16 @@
+.mobile__header {
+  @media screen and (max-width:767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.mobile-menu__btn {
+  width: 40px;
+  height: 40px;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}

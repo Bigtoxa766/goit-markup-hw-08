@@ -1,9 +1,11 @@
-// Mobile =====================================
+
 // Base styles
-@import './mobile-first/base/base';
 @import './base/reset';
 @import './base/base';
-
+// @import './base/footer';
+// @import './base/portfolio';
+// @import './base/grid';
+// @import './base/btn';
 
 
 // Utils
@@ -13,29 +15,15 @@
 
 
 // Components
-@import './mobile-first/components/header';
-
-
-
-
-
-
-// @import './base/footer';
-// @import './base/portfolio';
-// @import './base/grid';
-// @import './base/btn';
-
-
-
-// @import './components/container';
-// @import './components/logo';
-// @import './components/navigation';
-// @import './components/contacts';
-// @import './components/header';
+@import './components/container';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/header';
 // @import './components/mobile__header';
 @import './components/hero';
-// @import './components/advantage';
-// @import './components/work';
+@import './components/advantage';
+@import './components/work';
 // @import './components/team';
 // @import './components/social';
 // @import './components/clients';
