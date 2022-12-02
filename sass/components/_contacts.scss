@@ -27,6 +27,8 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(14 / 12);
+
+  display: flex;
   
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -34,11 +36,18 @@
   &:hover, &:focus{
     color: var(--accent-color);
   }
+
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 }
 .contact__icon--letter, .contact__icon--smartphone {
   fill: currentColor;
 
   margin-right: 8px;
+  align-items: center;
+  justify-content: center
 }
 
 
