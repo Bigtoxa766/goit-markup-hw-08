@@ -1,3 +1,5 @@
+
+
 .thumb__title {
   font-weight: 700;
   font-size: 18px;
@@ -21,7 +23,7 @@
 }
 
 .border {
-  width: 370px;
+  width: 100%;
   border: 1px solid #EEEEEE;
 }
 
@@ -48,7 +50,8 @@
 
   background-color: rgba(33, 150, 243, 0.9);
 
-  .portfolio__item:hover &{
+  .portfolio__item:hover &, 
+  .portfolio__item:focus &{
     transform: translateY(0)
   }
 }

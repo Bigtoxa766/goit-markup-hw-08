@@ -28,17 +28,23 @@
 // ====================================
 
 .social__block {
-  margin-right: 93px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 89px;
+  }
 }
 
 .social__title--darkbg {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include fonts (14px, calc(16 / 14), 700, 0.03em);
+  
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .social__link--dark {

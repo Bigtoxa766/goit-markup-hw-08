@@ -2,16 +2,14 @@
 // Base styles
 @import './base/reset';
 @import './base/base';
-// @import './base/footer';
-// @import './base/portfolio';
-// @import './base/grid';
-// @import './base/btn';
+@import './base/btn';
 
 
 // Utils
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/modal';
+@import './utils/mobile-menu';
 
 
 // Components
@@ -20,16 +18,18 @@
 @import './components/navigation';
 @import './components/contacts';
 @import './components/header';
-// @import './components/mobile__header';
 @import './components/hero';
 @import './components/advantage';
 @import './components/work';
 @import './components/team';
 @import './components/social';
-// @import './components/clients';
-// @import './components/address';
-// @import './components/mailing';
-// @import './components/filter';
-// @import './components/thumb';
-// @import './components/form';
-// @import './components/checkbox';
+@import './components/clients';
+@import './components/address';
+@import './components/mailing';
+@import './components/filter';
+@import './components/thumb';
+@import './components/portfolio';
+@import './components/footer';
+@import './components/grid';
+@import './components/form';
+@import './components/checkbox';

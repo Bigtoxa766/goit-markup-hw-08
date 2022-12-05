@@ -33,6 +33,10 @@
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover, &:focus{
     color: var(--accent-color);
   }
@@ -78,9 +82,9 @@
 //   display: flex;
 //   align-items: center;
 
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: color;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 //   &:hover{color: var(--accent-color);}
 //   &:focus{color: var(--accent-color);}

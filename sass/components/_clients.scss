@@ -1,22 +1,32 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section;
 }
 
 .clients__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  @include fonts (28px, calc(33 / 28), 700, 0.03em);
+  
   text-align: center;
-  letter-spacing: 0.03em;
+ 
   margin-bottom: 50px;
 }
 
 .clients__list {
   list-style: none;
   display: flex;
-  justify-content: center;
+  
   gap: 30px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.clients__item{
+  flex-basis: calc((100% - 30px * 1) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
 }
 
 .clients__icon {
@@ -37,7 +47,11 @@
 
 .clients__link {
   display: flex;
-  padding: 15px 31px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  justify-content: center;
+
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 

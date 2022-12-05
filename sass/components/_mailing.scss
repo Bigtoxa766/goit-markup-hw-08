@@ -1,52 +1,72 @@
+.mailing__block{
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
 .mailing__form {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 
   gap: 12px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+
+  }
 }
 
 .mailing__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  @include fonts (14px, calc(16 / 14), 700, 0.03em);
+
   text-transform: uppercase;
   color: #FFFFFF;
+  text-align: center;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .mailing__group {
   position: relative;
+  text-align: center;
 }
 
 .mailing__label {
   position: absolute;
   display: flex;
 
-  top: 50%;
+  top: 37%;
   left: 16px;
   transform: translateY(-50%);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: left;
 
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include fonts (16px, calc(20 / 16), false, 0.03em);
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width:768px) and (max-width: 1199px) {
+    top: 37%;
+    left: 160px;
+    transform: translateY(-50%);
+  }
 }
 
 .mailing__inp {
   padding: 0;
+  margin-bottom: 20px;
   outline: none;
+  padding-left: 15px;
 
   color: #ffffff;
 
-  padding-left: 15px;
-
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -54,6 +74,11 @@
   background-color: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  
 
   &:focus, &:not(:placeholder-shown){
     border-color: #ffffff;
@@ -69,6 +94,9 @@
   position: relative;
 
   padding-right: 68px;
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: auto;
+  // }
 
   &::after{
     content: "";

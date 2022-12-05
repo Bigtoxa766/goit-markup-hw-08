@@ -21,39 +21,55 @@
     
   </head>
   <body>
-    <header class="header">
-      <div class="container flex">
+  <header class="header">
+    <div class="container container--flex">
+  
+      <div class="mobile__header">
         <a href="./index.html" class="logo logo--whitebg">
           <span class="logo__accent">Web</span>Studio</a>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li>
-              <a class="navigation__link link" href="./index.html">Студія</a>
-            </li>
-            <li>
-              <a class="navigation__link link current" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li><a class="navigation__link link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="contact__list">
-          <li>
-            <a class="contact__link link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon--letter" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-letter"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="contact__link link" href="tel:+380961111111">
-              <svg class="contact__icon--smartphone" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
+  
+        <div class="container mobile__container">
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+  
+        </div>
       </div>
-    </header>
+  
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li>
+            <a class="navigation__link link" href="./index.html">Студія</a>
+          </li>
+          <li>
+            <a class="navigation__link link current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li><a class="navigation__link link" href="">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <a class="contact__link link" href="mailto:info@devstudio.com">
+            <svg class="contact__icon--letter" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-letter"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="contact__item">
+          <a class="contact__link link" href="tel:+380961111111">
+            <svg class="contact__icon--smartphone" width="10" height="16">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  
+  </header>
     <main>
       <h1 class="visually-hidden">Портфоліо</h1>
       <section class="portfolio">
@@ -69,7 +85,23 @@
             <li class="portfolio__item">
               <a class="link" href="">
                 <div class="thumb">
-                  <img class="thumb__img" src="./images/portfolio/img(9).jpg" alt="Технокряк" width="370" height="294" />
+                  <img 
+                  class="thumb__img" 
+                  src="./images/portfolio/img-1@tel_450.jpg" 
+                  alt="Технокряк" 
+                  srcset="
+                  ./images/portfolio/img-1@tel_450.jpg 450w,
+                  ./images/portfolio/img-1@tel_900.jpg 900w,
+                  ./images/portfolio/img-1@tab_354.jpg 354w,
+                  ./images/portfolio/img-1@tab_708.jpg 708w,
+                  ./images/portfolio/img-1@dsk_370.jpg 370w,
+                  ./images/portfolio/img-1@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw"
+                  />
+                  
                   <div class="overlay">
                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
@@ -85,8 +117,21 @@
             <li class="portfolio__item">
               <a href="" class="link">
                 <div class="thumb">
-                  <img class="thumb__img" src="./images/portfolio/img(1)(1).jpg" alt="Постер New Orlean vs Golden Star" width="370"
-                    height="294" />
+                  <img 
+                  class="thumb__img" 
+                  src="./images/portfolio/img-2@tel_450.jpg" 
+                  alt="Постер New Orlean vs Golden Star" 
+                  srcset="
+                  ./images/portfolio/img-2@tel_450.jpg 450w,
+                  ./images/portfolio/img-2@tel_900.jpg 900w,
+                  ./images/portfolio/img-2@tab_354.jpg 354w,
+                  ./images/portfolio/img-2@tab_708.jpg 708w,
+                  ./images/portfolio/img-2@dsk_370.jpg 370w,
+                  ./images/portfolio/img-2@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw" />
                   <div class="overlay">
                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
@@ -102,7 +147,21 @@
             <li class="portfolio__item">
              <a href="" class="link">
               <div class="thumb">
-                <img class="thumb__img" src="./images/portfolio/img(2)(1).jpg" alt="Ресторан Seafood" width="370" height="294" />
+                <img 
+                class="thumb__img" 
+                src="./images/portfolio/img-3@tel_450.jpg" 
+                alt="Ресторан Seafood" 
+                srcset="
+                  ./images/portfolio/img-3@tel_450.jpg 450w,
+                  ./images/portfolio/img-3@tel_900.jpg 900w,
+                  ./images/portfolio/img-3@tab_354.jpg 354w,
+                  ./images/portfolio/img-3@tab_708.jpg 708w,
+                  ./images/portfolio/img-3@dsk_370.jpg 370w,
+                  ./images/portfolio/img-3@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw"  />
                 <div class="overlay">
                   <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
@@ -118,7 +177,21 @@
             <li class="portfolio__item">
               <a href="" class="link">
                <div class="thumb">
-                <img class="thumb__img" src="./images/portfolio/img(3)(1).jpg" alt="Проєкт Prime" width="370" height="294" />
+                <img 
+                class="thumb__img" 
+                src="./images/portfolio/img-4@tel_450.jpg" 
+                alt="Проєкт Prime" 
+                srcset="
+                  ./images/portfolio/img-4@tel_450.jpg 450w,
+                  ./images/portfolio/img-4@tel_900.jpg 900w,
+                  ./images/portfolio/img-4@tab_354.jpg 354w,
+                  ./images/portfolio/img-4@tab_708.jpg 708w,
+                  ./images/portfolio/img-4@dsk_370.jpg 370w,
+                  ./images/portfolio/img-4@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw" />
                 <div class="overlay">
                   <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
@@ -134,7 +207,21 @@
             <li class="portfolio__item">
               <a href="" class="link">
                 <div class="thumb">
-                  <img class="thumb__img" src="./images/portfolio/img(4)(1).jpg" alt="Проєкт Boxes" width="370" height="294" />
+                  <img 
+                  class="thumb__img" 
+                  src="./images/portfolio/img-5@tel_450.jpg" 
+                  alt="Проєкт Boxes" 
+                  srcset="
+                  ./images/portfolio/img-5@tel_450.jpg 450w,
+                  ./images/portfolio/img-5@tel_900.jpg 900w,
+                  ./images/portfolio/img-5@tab_354.jpg 354w,
+                  ./images/portfolio/img-5@tab_708.jpg 708w,
+                  ./images/portfolio/img-5@dsk_370.jpg 370w,
+                  ./images/portfolio/img-5@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw"/>
                   <div class="overlay">
                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
@@ -150,8 +237,21 @@
             <li class="portfolio__item">
               <a href="" class="link">
                 <div class="thumb">
-                  <img class="thumb__img" src="./images/portfolio/img(5)(1).jpg" alt="Inspiration has no Borders" width="370"
-                    height="294" />
+                  <img 
+                  class="thumb__img" 
+                  src="./images/portfolio/img-6@tel_450.jpg" 
+                  alt="Inspiration has no Borders" 
+                  srcset="
+                  ./images/portfolio/img-6@tel_450.jpg 450w,
+                  ./images/portfolio/img-6@tel_900.jpg 900w,
+                  ./images/portfolio/img-6@tab_354.jpg 354w,
+                  ./images/portfolio/img-6@tab_708.jpg 708w,
+                  ./images/portfolio/img-6@dsk_370.jpg 370w,
+                  ./images/portfolio/img-6@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw" />
                   <div class="overlay">
                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
@@ -167,8 +267,21 @@
             <li class="portfolio__item">
               <a href="" class="link">
                 <div class="thumb">
-                  <img class="thumb__img" src="./images/portfolio/img(6)(1).jpg" alt="Видання Limited Edition" width="370"
-                    height="294" />
+                  <img 
+                  class="thumb__img" 
+                  src="./images/portfolio/img-7@tel_450.jpg" 
+                  alt="Видання Limited Edition" 
+                  srcset="
+                  ./images/portfolio/img-7@tel_450.jpg 450w,
+                  ./images/portfolio/img-7@tel_900.jpg 900w,
+                  ./images/portfolio/img-7@tab_354.jpg 354w,
+                  ./images/portfolio/img-7@tab_708.jpg 708w,
+                  ./images/portfolio/img-7@dsk_370.jpg 370w,
+                  ./images/portfolio/img-7@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw" />
                   <div class="overlay">
                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
@@ -184,7 +297,21 @@
             <li class="portfolio__item">
               <a href="" class="link">
                 <div class="thumb">
-                  <img class="thumb__img" src="./images/portfolio/img(7)(1).jpg" alt="Проєкт LAB" width="370" height="294" />
+                  <img 
+                  class="thumb__img"
+                  src="./images/portfolio/img-8@tel_450.jpg" 
+                  alt="Проєкт LAB" 
+                  srcset="
+                  ./images/portfolio/img-8@tel_450.jpg 450w,
+                  ./images/portfolio/img-8@tel_900.jpg 900w,
+                  ./images/portfolio/img-8@tab_354.jpg 354w,
+                  ./images/portfolio/img-8@tab_708.jpg 708w,
+                  ./images/portfolio/img-8@dsk_370.jpg 370w,
+                  ./images/portfolio/img-8@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw"/>
                   <div class="overlay">
                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
@@ -200,7 +327,21 @@
             <li class="portfolio__item">
               <a href="" class="link">
                 <div class="thumb">
-                  <img class="thumb__img" src="./images/portfolio/img(8)(1).jpg" alt="Growing Business" width="370" height="294" />
+                  <img 
+                  class="thumb__img" 
+                  src="./images/portfolio/img-9@tel_450.jpg" 
+                  alt="Growing Business" 
+                  srcset="
+                  ./images/portfolio/img-9@tel_450.jpg 450w,
+                  ./images/portfolio/img-9@tel_900.jpg 900w,
+                  ./images/portfolio/img-9@tab_354.jpg 354w,
+                  ./images/portfolio/img-9@tab_708.jpg 708w,
+                  ./images/portfolio/img-9@dsk_370.jpg 370w,
+                  ./images/portfolio/img-9@dsk_740.jpg 740w"
+                  sizes="
+                  (min-width: 1200px) 370px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw"/>
                   <div class="overlay">
                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
@@ -219,53 +360,55 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="address__block">
-          <a class="logo logo--darkbg" href="./index.html">
-            <span class="logo__accent">Web</span>Studio</a>
-          <address class="address">
-            <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="address__list">
+        <div class="footer__block">
+          <div class="address__block">
+            <a class="logo logo--darkbg" href="./index.html">
+              <span class="logo__accent">Web</span>Studio</a>
+            <address class="address">
+              <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+              <ul class="address__list">
+                <li>
+                  <a class="link address__link--mail address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a class="link address__link--tel address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social__block">
+            <h2 class="social__title--darkbg">Приєднуйтесь</h2>
+            <ul class="list social__list--dark">
               <li>
-                <a class="link address__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="link social__link--dark" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                  <svg class="social__icon--dark" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="link social__link--dark" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                  <svg class="social__icon--dark" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link social__link--dark" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                  <svg class="social__icon--dark" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link social__link--dark" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                  <svg class="social__icon--dark" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social__block">
-          <h2 class="social__title--darkbg">Приєднуйтесь</h2>
-          <ul class="list social__list--dark">
-            <li>
-              <a class="link social__link--dark" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
-                <svg class="social__icon--dark" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="link social__link--dark" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
-                <svg class="social__icon--dark" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="link social__link--dark" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
-                <svg class="social__icon--dark" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="link social__link--dark" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-                <svg class="social__icon--dark" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="mailing__block">
           <p class="mailing__text">Підпишіться на розсилку</p>
@@ -280,5 +423,51 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-menu__icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Студія</a></li>
+        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile__contacts">
+        <li class="mobile__item"><a class="mobile__link mobile__link--tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="mobile__item"><a class="mobile__link mobile__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="mobile-social__list">
+        <li class="mobile-social__item">
+          <a 
+        class="mobile-social__link" 
+        href="">Instagram</a></li>
+        <li class="mobile-social__item">
+          <a 
+        class="mobile-social__link mobile-social__link--after" 
+        href="">Twitter</a></li>
+        <li class="mobile-social__item">
+          <a 
+        class="mobile-social__link mobile-social__link--after" 
+        href="">Facebook</a></li>
+        <li class="mobile-social__item">
+          <a 
+        class="mobile-social__link mobile-social__link--after" 
+        href="">LinkedIn</a></li>
+      </ul>
+    
+    </div>
+    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

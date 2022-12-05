@@ -71,6 +71,12 @@
   }
 }
 
+.form__icon{
+  .form-input:focus & {
+      fill: var(--accent-color);
+    }
+}
+
 .icon {
   position: absolute;
   top: 50%;

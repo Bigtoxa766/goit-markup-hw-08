@@ -35,8 +35,8 @@
 
 .checkbox-label {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
 
   color: #757575;

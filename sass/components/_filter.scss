@@ -1,8 +1,17 @@
 .filter__list {
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
   display: flex;
-  justify-content: center;
+  gap: 8px;
+  row-gap: 15px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .filter__item:not(:last-child) {
@@ -14,6 +23,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  flex-basis: calc((100% - 8px * 2) / 3);
 
   letter-spacing: 0.03em;
   background: #F5F4FA;
